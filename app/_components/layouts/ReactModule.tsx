@@ -41,8 +41,6 @@ const tagColors = {
 
 
 export default function ReactModule() {
-
-
     return (
         <div className="min-h-screen bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-12">

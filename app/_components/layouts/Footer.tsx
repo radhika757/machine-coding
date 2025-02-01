@@ -27,7 +27,7 @@ export default function Footer() {
       })
     }
     return (
-        <div className="min-h-screen bg-black">
+        <div className="bg-black">
             {/* Your other content here */}
             <footer className="bg-black text-gray-400">
                 <div className="max-w-7xl mx-auto px-4 py-16">
@@ -52,7 +52,7 @@ export default function Footer() {
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
                             <ul className="space-y-2">
-                                {["Features", "React Components", "JavaScript Components", "Documentation"].map((item) => (
+                                {["Features", "React Components", "JavaScript Components"].map((item) => (
                                     <li key={item}>
                                         <a href="#" className="hover:text-white transition-colors">
                                             {item}

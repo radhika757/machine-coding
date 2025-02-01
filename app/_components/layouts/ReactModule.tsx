@@ -9,7 +9,7 @@ const components = [
         title: "Modal Component",
         description: "A reusable modal component with customizable content and animations.",
         tag: {
-            text: "Hooks",
+            text: "React",
             color: "blue" as const,
         },
     },
@@ -18,7 +18,7 @@ const components = [
         title: "Form Validator",
         description: "Form validation with custom hooks and error handling.",
         tag: {
-            text: "Custom Hook",
+            text: "JavaScript",
             color: "purple" as const,
         },
     },
@@ -27,8 +27,35 @@ const components = [
         title: "Data Table",
         description: "Sortable and filterable data table with pagination.",
         tag: {
-            text: "Complex",
+            text: "Custom Hook",
             color: "green" as const,
+        },
+    },
+    {
+        id: 4,
+        title: "Image Carousel",
+        description: "Custom image slider with touch support and automatic playback.",
+        tag: {
+            text: "React",
+            color: "blue" as const,
+        },
+    },
+    {
+        id: 5,
+        title: "Image Lightbox",
+        description: "Responsive lightbox gallery with zoom functionality.",
+        tag: {
+            text: "Custom Hook",
+            color: "green" as const,
+        },
+    },
+    {
+        id: 6,
+        title: "Accordion Menu",
+        description: "Collapsible accordion with smooth animations.",
+        tag: {
+            text: "JavaScript",
+            color: "purple" as const,
         },
     },
 ]
@@ -44,7 +71,7 @@ export default function ReactModule() {
     return (
         <div className="min-h-screen bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-center text-white">React Components Library</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-center text-white">Components with powerful features 🚀</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {components.map((component) => (
                         <div key={component.id} className="bg-[#1a1a1a] rounded-xl p-6 space-y-4 hover:bg-[#222] transition-colors">

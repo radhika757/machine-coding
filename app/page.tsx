@@ -1,5 +1,4 @@
 import Footer from "./_components/layouts/Footer"
-import JsModule from "./_components/layouts/JsModule"
 import ReactModule from "./_components/layouts/ReactModule"
 import SearchModule from "./_components/layouts/SearchModule"
 
@@ -18,7 +17,7 @@ function Button() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center p-4">
+      <div className="bg-[#0a0a0a] flex items-center justify-center p-4 pt-16">
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-5xl font-bold leading-tight">
@@ -53,9 +52,6 @@ function Button() {
       </div>
       <div className="mt-16">
         <ReactModule />
-      </div>
-      <div className="mt-6">
-        <JsModule />
       </div>
       <div className="mt-6">
         <SearchModule />

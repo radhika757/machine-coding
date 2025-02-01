@@ -44,7 +44,7 @@ export default function SearchModule() {
     const [activeFilter, setActiveFilter] = useState("All")
 
     return (
-        <div className="min-h-screen bg-black py-16 px-4">
+        <div className="bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Search Components</h1>
 
@@ -60,7 +60,7 @@ export default function SearchModule() {
                 <div className="flex flex-wrap gap-2 justify-center">
                     {filters.map((filter) => (
                         <button
-                            key='1'
+                            key={filter}
                             onClick={() => setActiveFilter(filter)}
                             className={`px-4 py-2 rounded-full text-sm transition-colors ${activeFilter ? "bg-blue-600 text-white" : "text-gray-400 hover:text-gray-300"
                                 }`}

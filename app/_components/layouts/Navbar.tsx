@@ -3,7 +3,7 @@ import type React from "react" // Import React
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="sticky top-0 z-10 bg-gray-900 text-white shadow-md">
+    <nav className="sticky top-0 z-10 bg-black text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -12,12 +12,11 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <NavLink href="/">Home</NavLink>
-              <NavLink href="/features">Features</NavLink>
-              <NavLink href="/react-components">React Components</NavLink>
-              <NavLink href="/js-components">JS Components</NavLink>
-              <NavLink href="/search">Search</NavLink>
+            <div className="ml-10 flex items-baseline space-x-6">
+              <Link href="/" className="text-lg">Home</Link>
+              <Link href="/features" className="text-lg">Features</Link>
+              <Link href="/components" className="text-lg">Components</Link>
+              <Link href="/search" className="text-lg">Search</Link>
             </div>
           </div>
           <div className="md:hidden">
@@ -33,22 +32,6 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </nav>
-  )
-}
-
-interface NavLinkProps {
-  href: string
-  children: React.ReactNode
-}
-
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
-  return (
-    <Link
-      href={href}
-      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-    >
-      {children}
-    </Link>
   )
 }
 

@@ -1,5 +1,6 @@
 import JsModule from "./_components/layouts/JsModule"
 import ReactModule from "./_components/layouts/ReactModule"
+import SearchModule from "./_components/layouts/SearchModule"
 
 export default function Home() {
   const sampleCode = `{// Example Component
@@ -54,6 +55,9 @@ function Button() {
       </div>
       <div className="mt-6">
         <JsModule />
+      </div>
+      <div className="mt-6">
+        <SearchModule />
       </div>
     </>
   )

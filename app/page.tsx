@@ -1,3 +1,4 @@
+import JsModule from "./_components/layouts/JsModule"
 import ReactModule from "./_components/layouts/ReactModule"
 
 export default function Home() {
@@ -48,10 +49,12 @@ function Button() {
           </div>
         </div>
       </div>
-    <div className="mt-16">
-    <ReactModule />
-    </div>
-      
+      <div className="mt-16">
+        <ReactModule />
+      </div>
+      <div className="mt-6">
+        <JsModule />
+      </div>
     </>
   )
 }

@@ -46,7 +46,7 @@ export default function SearchModule() {
     return (
         <div className="bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Search Components</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Search your Component</h1>
 
                 <div className="relative w-full max-w-4xl mx-auto">
                     <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />

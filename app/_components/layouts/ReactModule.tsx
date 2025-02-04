@@ -1,6 +1,7 @@
+"use client"
 
 import { Code, MoveUpRight } from "lucide-react"
-
+import { useRouter } from "next/navigation"
 
 
 const components = [
@@ -68,6 +69,12 @@ const tagColors = {
 
 
 export default function ReactModule() {
+    const route = useRouter();
+
+    function handleViewMore() {
+        route.push('/components')
+    }
+
     return (
         <div className="min-h-screen bg-black py-16 px-4">
             <div className="max-w-7xl mx-auto space-y-12">
@@ -88,7 +95,7 @@ export default function ReactModule() {
                     ))}
                 </div>
                 <div className="flex justify-center">
-                <button className="text-xl font-semibold text-white flex gap-2">View More <MoveUpRight /></button>
+                <button className="text-xl font-semibold text-white flex gap-2" onClick={() => handleViewMore()}>View More <MoveUpRight /></button>
                 </div>
                 
             </div>

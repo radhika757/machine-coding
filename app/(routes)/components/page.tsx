@@ -1,6 +1,7 @@
 "use client"
 
 import Dropdown from '@/app/_components/dropdown/Dropdown'
+import CodeTemplate from '@/app/_components/layouts/CodeTemplate'
 import SideMenu from '@/app/_components/side-menu/SideMenu'
 import React from 'react'
 
@@ -13,6 +14,7 @@ const components = () => {
     </div>
     <div className='flex mt-5'>
       <SideMenu/>
+      <CodeTemplate/>
     </div>
    </div>
    </>

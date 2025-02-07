@@ -3,7 +3,7 @@ import React from 'react'
 const CodeTemplate = () => {
     return (
       <div>
-        component 
+        code component 
       </div>
     )
 }

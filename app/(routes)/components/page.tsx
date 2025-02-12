@@ -1,15 +1,16 @@
-"use client"
+"use client";
 
-import React from 'react'
+import SideMenu from "@/app/_components/side-menu/SideMenu";
+import React from "react";
 
 const components = () => {
   return (
-   <>
-   <div className='px-7 py-6'>
-    Components page 
-   </div>
-   </>
-  )
-}
+    <>
+      <div className="px-7 py-6">
+        <SideMenu />
+      </div>
+    </>
+  );
+};
 
-export default components
+export default components;

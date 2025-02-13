@@ -1,0 +1,7 @@
+1. Request for a feature. 
+2. Search a feature. 
+3. configure prettier in code.
+4. How can I make folderdata dynamic for different features?
+--> Store different folder structures in an object 
+--> Pass a componentName prop to fetch the correct structure.
+--> Dynamically load the right data inside FolderStructure. 
